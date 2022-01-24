@@ -1,0 +1,20 @@
+
+img{
+    height: 2rem;
+    position: flex;
+}
+
+.footer{
+    position: fixed;
+    bottom:0;
+    justify-content: flex-end;
+    background-color: rgb(46, 100, 88);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    height: 5%;
+}
+span{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
