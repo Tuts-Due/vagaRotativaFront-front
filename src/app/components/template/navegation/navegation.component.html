@@ -5,14 +5,15 @@
                 <i class="material-icons">home</i>
                 Home
             </a>
-            <a mat-list-item>
+            <a routerLink="/estacionamento" mat-list-item>
                 <i class="material-icons">menu</i>
-                Vagas
+                Estacionamento
             </a>
-        </mat-nav-list>
-       
+        </mat-nav-list>       
     </mat-sidenav>
+
     <mat-sidenav-content>
         <router-outlet></router-outlet>        
     </mat-sidenav-content>
+    
 </mat-sidenav-container>

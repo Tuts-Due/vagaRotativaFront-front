@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -12,8 +13,10 @@ import { NavegationComponent } from "./components/template/navegation/navegation
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
-import { HomeComponent } from './components/views/home/home.component';
-import {MatCardModule} from '@angular/material/card'
+import { HomeComponent } from "./components/views/home/home.component";
+import { MatCardModule } from "@angular/material/card";
+import { MatTableModule } from "@angular/material/table";
+import { PessoaReadComponent } from "./components/views/estacionamento/pessoa-read/pessoa-read.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,7 @@ import {MatCardModule} from '@angular/material/card'
     FooterComponent,
     NavegationComponent,
     HomeComponent,
+    PessoaReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {MatCardModule} from '@angular/material/card'
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
